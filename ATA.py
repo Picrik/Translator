@@ -10,7 +10,7 @@ print("Veillez prononcez la phrase à traduire en eng ")
 texte = speechToText()
 
 print("J'ai entendu : " + texte)
-texte = traduction(texte)
-textToSpeech(texte)
+texte, langue = traduction(texte)
+textToSpeech(texte, langue)
 
 print("J'ai fini !")
