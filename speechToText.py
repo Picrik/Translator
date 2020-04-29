@@ -8,8 +8,8 @@ def speechToText():
 
     # recognize speech using Sphinx
     try:
-        print("ATA à entendu " + r.recognize_sphinx(audio, language = "fr-FR"))
-        texte = r.recognize_sphinx(audio, language = "fr-FR")
+        print("ATA à entendu " + r.recognize_google(audio, language = "fr-FR"))
+        texte = r.recognize_google(audio, language = "fr-FR")
     except sr.UnknownValueError:
         print("Sphinx could not understand audio")
     except sr.RequestError as e:
